@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Wedding Invitation</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .clickable {
+            cursor: pointer;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="envelope" src="https://drive.google.com/uc?export=view&id=1eUbbeR3RS2mOGxJcY5gwP-vAyEUZkZAq" alt="Envelope" class="clickable center">
+    <img id="details1" src="https://drive.google.com/uc?export=view&id=1iS5hzeNVbH6u7gx3cEJZS1chL7kpkQr4" alt="Details 1" class="hidden center">
+    <img id="details2" src="https://drive.google.com/uc?export=view&id=1SmP5ApLT_fEfBC6LO9k73SSEgqemRWW5" alt="Details 2" class="hidden center">
+
+    <script>
+        document.getElementById('envelope').addEventListener('click', function() {
+            document.getElementById('envelope').classList.add('hidden');
+            document.getElementById('details1').classList.remove('hidden');
+            document.getElementById('details2').classList.remove('hidden');
+        });
+    </script>
+
+</body>
+</html>
